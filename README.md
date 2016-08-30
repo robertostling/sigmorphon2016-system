@@ -1,10 +1,9 @@
 # sigmorphon2016-system
 University of Helsinki contribution to the SIGMORPHON 2016 shared task on morphological reinflection
 
-Further description can be found in the system paper submitted to the
-SIGMORPHON workshop (to be held on August 11 at ACL 2016 in Berlin).
-For now, a
-[preliminary version of the paper is available](paper/sigmorphon.pdf).
+A description can be found in the
+[system paper from SIGMORPHON](http://aclweb.org/anthology/W/W16/W16-2003.pdf)
+([BibTeX](http://www.robos.org/sections/research/robert_bib.html#Ostling2016sigmorphon)).
 
 The system is implemented in [Keras](https://keras.io/), and there are two
 versions: [the shared task submission](./sigmorphon-submission.py) and
