@@ -137,7 +137,7 @@ class MorphonData:
                 [features.get(feature) == value
                  for feature,values in self.feature_values
                  for value in values],
-                dtype=np.int8)
+                dtype=np.float32)
 
 
 if __name__ == '__main__':

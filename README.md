@@ -14,10 +14,20 @@ Both programs assume that the shared task data are available in the
 directory `../sigmorphon2016`, which should be cloned from
 [here](https://github.com/ryancotterell/sigmorphon2016).
 
-Execute with e.g. `python3 sigmorphon-conv.py 123 german navajo`
+It is recommended to use [virtualenv](https://virtualenv.pypa.io) to set up the
+dependencies of this project. To do so, execute the following commands:
+
+```sh
+python3 -m venv /path/to/virtual/environment
+source /path/to/virtual/environment/bin/activate
+pip3 install --upgrade pip
+pip3 install -r requirements.txt
+```
+
+Evaluation can be executed with e.g. `python3 sigmorphon-conv.py 123 german navajo`
 which will write output to the `models` directory (which is assumed to exist!)
 using the experiment identifier `123` and training models for German and
-Navajo.
+Navajo. After you finished testing, execute `deactivate` to exit the virtual environment.
 
 The particular experiments to run currently have to be hard-coded in
 `run_experiments()` -- sorry about this, adding a convenient UI was not

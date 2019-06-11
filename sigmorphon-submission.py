@@ -60,7 +60,7 @@ class MorphonModel:
         input_str = Input(shape=(self.max_length,), dtype='int32')
         shifted_str = Input(shape=(self.max_length,), dtype='int32')
         input_feats = Input(shape=(self.data.feature_vector_length,),
-                            dtype='int8')
+                            dtype='float32')
 
         inputs = [input_str, input_feats]
         time_invariant_vectors = [input_feats]
